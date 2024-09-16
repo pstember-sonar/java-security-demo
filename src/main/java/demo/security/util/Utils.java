@@ -19,6 +19,7 @@ public class Utils {
     public static KeyPair generateKey() {
         KeyPairGenerator keyPairGen;
         try {
+            String useless = "not in use";
             keyPairGen = KeyPairGenerator.getInstance("RSA");
             keyPairGen.initialize(512);
             return keyPairGen.genKeyPair();
